@@ -1,0 +1,495 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e5bc088c9caeb44bc4283dc321b033, type: 3}
+  m_Name: GameControls
+  m_EditorClassIdentifier: 
+  m_Actions:
+  - {fileID: 11427778}
+  - {fileID: 11418382}
+  - {fileID: 11478880}
+  - {fileID: 11420678}
+  - {fileID: 11427970}
+  - {fileID: 11457576}
+  - {fileID: 11449172}
+  - {fileID: 11456766}
+  - {fileID: 11420696}
+  - {fileID: 11401250}
+  - {fileID: 11466042}
+  - {fileID: 11407598}
+  - {fileID: 11446250}
+  - {fileID: 11461208}
+  - {fileID: 11437060}
+  - {fileID: 11446066}
+  m_ControlSchemes:
+  - m_Name: A_Gamepad
+    m_SerializableDeviceTypes:
+    - m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    m_ActionMap: {fileID: 11400000}
+    m_Bindings:
+    - sources:
+      - controlIndex: 0
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 1
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 3
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 4
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 10
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 11
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 12
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 13
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 16
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 17
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 14
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 15
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources: []
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources: []
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 22
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+    - sources:
+      - controlIndex: 21
+        deviceType:
+          m_TypeName: UnityEngine.InputNew.Gamepad, Assembly-CSharp, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+      deadZone: 0.3
+      buttonAxisSources: []
+      gravity: 1000
+      sensitivity: 1000
+      snap: 1
+      primaryIsButtonAxis: 0
+  m_MapTypeName: GameControls, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+--- !u!114 &11401250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Right_Bumper
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 9
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 0
+    name: Right_Bumper
+    defaultValue: 0
+--- !u!114 &11407598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Right_Trigger
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 11
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 0
+    name: Right_Trigger
+    defaultValue: 0
+--- !u!114 &11418382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Move_Y
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 1
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 2
+    name: Move_Y
+    defaultValue: 0
+--- !u!114 &11420678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Look_Y
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 3
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 2
+    name: Look_Y
+    defaultValue: 0
+--- !u!114 &11420696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Left_Bumper
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 8
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 0
+    name: Left_Bumper
+    defaultValue: 0
+--- !u!114 &11427778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Move_X
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 0
+  m_ControlData:
+    componentControlIndices: 0000000000000000
+    controlType: 2
+    name: Move_X
+    defaultValue: 0
+--- !u!114 &11427970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: A_Gamepad
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 4
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 0
+    name: Button_1
+    defaultValue: 0
+--- !u!114 &11437060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Start
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 14
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 0
+    name: Start
+    defaultValue: 0
+--- !u!114 &11446066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: GoBack
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 15
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 0
+    name: GoBack
+    defaultValue: 0
+--- !u!114 &11446250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Move
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 12
+  m_ControlData:
+    componentControlIndices: 0000000001000000
+    controlType: 3
+    name: Move
+    defaultValue: 0
+--- !u!114 &11449172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Button_3
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 6
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 0
+    name: Button_3
+    defaultValue: 0
+--- !u!114 &11456766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Button_4
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 7
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 0
+    name: Button_4
+    defaultValue: 0
+--- !u!114 &11457576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Button_2
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 5
+  m_ControlData:
+    componentControlIndices: 00000000000000000000000000000000
+    controlType: 0
+    name: Button_2
+    defaultValue: 0
+--- !u!114 &11461208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Look
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 13
+  m_ControlData:
+    componentControlIndices: 0200000003000000
+    controlType: 3
+    name: Look
+    defaultValue: 0
+--- !u!114 &11466042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Left_Trigger
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 10
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 0
+    name: Left_Trigger
+    defaultValue: 0
+--- !u!114 &11478880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eba7b4b2e3ea134991ccbff5f47c2c8, type: 3}
+  m_Name: Look_X
+  m_EditorClassIdentifier: 
+  m_ActionMap: {fileID: 11400000}
+  m_ActionIndex: 2
+  m_ControlData:
+    componentControlIndices: 
+    controlType: 2
+    name: Look_X
+    defaultValue: 0
