@@ -6,16 +6,17 @@ using System.Collections;
 public class GameManager : MonoBehaviour 
 {
 	// Default to classic
-	public GameModes.Type modeType = GameModes.Type.Classic;
-	public LevelTypes.Type levelType;				 // We need to know what level we are on 
+	public GameModes.Type ModeType;						  // We need to know what mode we are using
+	public Levels.Enum LevelEnum;					 	  // We need to know what level we are on 
 
-	private GameModes.InitFunction modeInitFunction; // Init function for that game mode
-	private GameModes.UpdateFunction modeUpdateFunction; // Init function for that game mode
-		
+	private GameModes.InitFunction modeInitFunction_; 	  // Init function for that game mode
+	private GameModes.UpdateFunction modeUpdateFunction_; // Init function for that game mode
+	private LevelTypes.Type levelType_;					  // We need to know what type of level we are on
+
 	// Settor to let game manager know what level we are on
 	private void SetLevelType(LevelTypeEvent e)
 	{
-		levelType = e.type;
+		levelType_ = e.type;
 	}
 
 	// Listen to the space for level events
@@ -38,12 +39,15 @@ public class GameManager : MonoBehaviour
 	void OnLevelWasLoaded()
 	{
 		// Check to see if it is a game level
-		if(levelType == LevelTypes.Type.Game)
+		if(levelType_ == LevelTypes.Type.Game)
 		{
+			// TODO: Add some way of telling the spawn manager to create the correct spawner
+			// OR: Get it to just access game manager
+
 			// Grab the init function based off game mode
-			modeInitFunction = GameModes.GetGameModeInit(modeType);
+			modeInitFunction_ = GameModes.GetGameModeInit(ModeType);
 			// Call the method, so our game mode can be started
-			modeInitFunction();
+			modeInitFunction_();
 		}
 	}
 

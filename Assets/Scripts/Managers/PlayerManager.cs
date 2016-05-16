@@ -13,8 +13,7 @@ public class SetInputEvent : CustomEvent
 
 	public PlayerInput Input;
 }
-
-
+	
 public class JoinGameEvent : CustomEvent 
 {
 	public JoinGameEvent(int playerIndex, int spriteIndex)
@@ -76,6 +75,10 @@ public class PlayerManager : MonoBehaviour {
 	
 	PlayerHandle globalHandle;
 	List<PlayerInfo> players = new List<PlayerInfo>();
+	public int NumberOfPlayers
+	{
+		get { return players.Count; }
+	}
 
 	public void Start()
 	{
@@ -186,9 +189,11 @@ public class PlayerManager : MonoBehaviour {
 		// TODO: Ask spawn manager for position
 		Vector3 spawnPosition = new Vector3(0,0,0);
 
-		// Spawn the player there
+		// Spawn the player there, and keep them from being destroyed by game loads
 		players[joinEvent.PlayerIndex].playerObj = (GameObject) Instantiate(Resources.Load<GameObject>("DefaultPlayer"), 
 			                                                                spawnPosition, Quaternion.identity);
+		DontDestroyOnLoad(players[joinEvent.PlayerIndex].playerObj);
+
 		// Give the game object it's input
 		EventManager.Instance.SendEvent<SetInputEvent>
 		(

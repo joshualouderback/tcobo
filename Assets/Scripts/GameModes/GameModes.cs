@@ -10,7 +10,9 @@ public class GameModes
 	// Declare game mode types here
 	public enum Type 
 	{ 
-		Classic 
+		// Must start with zero
+		Classic = 0,
+		COUNT
 	};
 
 	// Add case so we can get your init game function
