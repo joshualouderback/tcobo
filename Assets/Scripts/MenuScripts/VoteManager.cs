@@ -24,27 +24,6 @@ public abstract class VoteManager : MonoBehaviour {
 	// Function that must be overrided to store voted choice in the GameManager
 	public abstract void SaveVotedChoice(int index);
 
-	// Connect to player join events to add more time when a player joins
-	public void OnEnable()
-	{
-		EventManager.Instance.Connect<JoinGameEvent>(OnPlayerJoin(), null);
-		EventManager.Instance.Connect<LeaveGameEvent>(OnPlayerLeave(), null);
-	}
-	public void OnDisable()
-	{
-		EventManager.Instance.Disconnect<JoinGameEvent>(OnPlayerJoin(), null);
-		EventManager.Instance.Disconnect<LeaveGameEvent>(OnPlayerLeave(), null);
-	}
-	// Delegate for Join and Leave Game Events to add and remove time
-	private void OnPlayerJoin(JoinGameEvent joinEvent)
-	{
-		timer_ += AddedTimePerPlayer * 0.5f;
-	}
-	private void OnPlayerLeave(LeaveGameEvent leaveEvent)
-	{
-		timer_ -= AddedTimePerPlayer * 0.5f;
-	}
-
 	// Initializing our manager
 	public void Start () 
 	{
