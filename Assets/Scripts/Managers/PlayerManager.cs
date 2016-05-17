@@ -39,32 +39,32 @@ public class LeaveGameEvent : CustomEvent
 
 public class PlayerManager : MonoBehaviour {
 
+	// -- Public
+	// TODO: Remove eventually
 	// Public but not editable in editor, for accessing players
 	[HideInInspector]
 	public List<GameObject> mPlayers = new List<GameObject>();
 
-	// Prefab for the HUD object for character select
 	[Header("Player Manager object must be in first level and never deleted.")]
-	public PlayerInput characterSelectHUDPrefab;
-
-	// Used for joining and leaving the game
-	public ButtonAction joinAction;
-	public ButtonAction leaveAction;
-
-	// HUD objects for the join sprite
-	List<GameObject> HUDPositions = new List<GameObject>();
-	// Array of Sprites of the Characters
-	private Sprite[] characterSprites_;
-
-	private int mNumberOfPlayers_;	
-
-	// Player info class, used for keeping track of handles and gameobjects
-	class PlayerInfo
+	public PlayerInput characterSelectHUDPrefab; // Prefab for the HUD object for character select
+	public ButtonAction joinAction;				 // Input action for joing
+	public ButtonAction leaveAction;			 // Input action for leaving
+	public int NumberOfPlayers					 // Public gettor for number of players joined in the game
 	{
-		public PlayerHandle handle;
-		public GameObject hudObj;
-		public GameObject playerObj;
-		public bool ready = false;
+		get { return players.Count; }
+	}
+
+	// -- Private
+	private List<GameObject> HUDPositions;		 // HUD objects for the join sprite
+	private Sprite[] characterSprites_; 		 // Array of Sprites of the Characters
+	private PlayerHandle globalHandle;			 // Global Handle to listen to new devices to join in game
+	private List<PlayerInfo> players;			 // PlayerInfo array to keep track of players to join
+	private class PlayerInfo 					 // Player info to keep track of handles and gameobjects
+	{
+		public PlayerHandle handle;				 // Input handle
+		public GameObject hudObj;				 // Reference to the hud object
+		public GameObject playerObj;			 // Reference to the player object we spawn
+		public bool ready = false;				 // Keep track if we are ready TODO: May remove
 
 		public PlayerInfo(PlayerHandle playerHandle, GameObject obj)
 		{
@@ -72,16 +72,13 @@ public class PlayerManager : MonoBehaviour {
 			hudObj = obj;
 		}
 	}
-	
-	PlayerHandle globalHandle;
-	List<PlayerInfo> players = new List<PlayerInfo>();
-	public int NumberOfPlayers
-	{
-		get { return players.Count; }
-	}
-
+		
 	public void Start()
 	{
+		// Create our arrays to store our data
+		HUDPositions = new List<GameObject>();
+		players = new List<PlayerInfo>();
+		// Load up character sprites for use
 		characterSprites_ =  Resources.LoadAll<Sprite>("CharacterSprites");	
 
 		// Don't even destroy the player manager

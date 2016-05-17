@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -9,7 +8,6 @@ public abstract class VoteManager : MonoBehaviour {
 	public TextMesh timeText;				// Reference to time text we will modify
 	public float BaseTimerLength = 15.0f;	// Base timer length
 	public float AddedTimePerPlayer = 5.0f;	// Value added to time per player
-	public Object SceneToLoad;				// Scene that we load after this one
 
 	// -- Protected
 	protected int[] VoteCount; 				// Array containing the votes
@@ -23,6 +21,8 @@ public abstract class VoteManager : MonoBehaviour {
 	public abstract int GetSize();
 	// Function that must be overrided to store voted choice in the GameManager
 	public abstract void SaveVotedChoice(int index);
+	// Function that must be overried, so we can load the correct level based on what manager we are
+	public abstract void LoadNextLevel();
 
 	// Initializing our manager
 	public void Start () 
@@ -59,7 +59,7 @@ public abstract class VoteManager : MonoBehaviour {
 				// Now save the data
 				SaveVotedChoice(index);
 				// And load the next scene
-				SceneManager.LoadScene(SceneToLoad.name);
+				LoadNextLevel();
 			}
 		}
 		else // Otherwise we have a majority
@@ -78,7 +78,7 @@ public abstract class VoteManager : MonoBehaviour {
 				// Now save the data
 				SaveVotedChoice(index);
 				// And load the next scene
-				SceneManager.LoadScene(SceneToLoad.name);
+				LoadNextLevel();
 			}
 		}
 

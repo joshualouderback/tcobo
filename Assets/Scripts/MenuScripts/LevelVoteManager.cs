@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class LevelVoteManager : VoteManager {
@@ -35,6 +36,12 @@ public class LevelVoteManager : VoteManager {
 	public override void SaveVotedChoice(int index)
 	{
 		Singleton<GameManager>.Instance.LevelEnum = (Levels.Enum)index;
+	}
+
+	// Override base class implementation to load the level stored in property
+	public override void LoadNextLevel()
+	{
+		SceneManager.LoadScene(Singleton<GameManager>.Instance.LevelEnum.ToString());
 	}
 
 

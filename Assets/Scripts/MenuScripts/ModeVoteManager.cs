@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class ModeVoteManager : VoteManager {
+
+	// -- Public
+	public Object SceneToLoad;				// Scene that we load after this one
 
 	// Connect to the add and remove mode vote events
 	public void OnEnable()
@@ -42,11 +46,15 @@ public class ModeVoteManager : VoteManager {
 	{
 		return (int)GameModes.Type.COUNT;
 	}
-
 	// Override base class implementation to store voted choice in the GameManager
 	public override void SaveVotedChoice(int index)
 	{
 		Singleton<GameManager>.Instance.ModeType = (GameModes.Type)index;
+	}
+	// Override base class implementation to load the level stored in property
+	public override void LoadNextLevel()
+	{
+		SceneManager.LoadScene(SceneToLoad.name);
 	}
 
 	// Initializing our manager
